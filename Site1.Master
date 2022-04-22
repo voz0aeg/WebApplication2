@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%--  <title>CelestialUI Admin</title>--%>
+    <!-- base:css -->
+    <link rel="stylesheet" href="vendors/typicons.font/font/typicons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="vendors/toastr/toastr.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row">
+            <div>
+                <nav class="sidebar sidebar-offcanvas">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.aspx">
+                                <i class="typcn typcn-device-desktop menu-icon"></i>
+                                <span class="menu-title">Ejercicio 1 </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ej2.aspx">
+                                <i class="typcn typcn-device-desktop menu-icon"></i>
+                                <span class="menu-title">Ejercicio 2 </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ej3.aspx">
+                                <i class="typcn typcn-device-desktop menu-icon"></i>
+                                <span class="menu-title">Ejercicio 3 </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ej4.aspx">
+                                <i class="typcn typcn-device-desktop menu-icon"></i>
+                                <span class="menu-title">Ejercicio 4 </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- container-scroller -->
+            <!-- base:js -->
+            <script src="vendors/js/vendor.bundle.base.js"></script>
+            <!-- endinject -->
+            <!-- Plugin js for this page-->
+            <!-- End plugin js for this page-->
+            <!-- inject:js -->
+            <script src="js/off-canvas.js"></script>
+            <%--<script src="js/hoverable-collapse.js"></script>--%>
+            <script src="js/template.js"></script>
+            <script src="js/settings.js"></script>
+            <script src="js/todolist.js"></script>
+            <!-- endinject -->
+            <!-- plugin js for this page -->
+            <%--<script src="vendors/progressbar.js/progressbar.min.js"></script>--%>
+            <%--<script src="vendors/chart.js/Chart.min.js"></script>--%>
+            <!-- Toastr -->
+            <script src="vendors/toastr/toastr.min.js"></script>
+            <!-- End plugin js for this page -->
+            <!-- Custom js for this page-->
+            <script src="js/dashboard.js"></script>
+            <!-- End custom js for this page-->
+
+            <script>
+                function ok() {
+                    //alert("ok");
+                    toastr.success('Guardado con exito');
+                }
+
+                function OpenModal(modalss) {
+                    $("#" + modalss).modal();
+                }
+
+              
+            </script>
+
+        </div>
+    </form>
+</body>
+</html>
